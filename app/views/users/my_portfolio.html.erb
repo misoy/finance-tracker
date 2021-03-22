@@ -1,0 +1,17 @@
+<h1>My Portfolio</h1>
+
+<div class="search-area my-5">
+  <h3>Search Stocks</h3>
+  <%= form_with(url: "#", method: :get) do |f| %>
+    <div class="form-group row">
+      <div class="col-8 pr-0">
+        <%= f.text_field :stock, placeholder: "Stock ticker symbol", autofocus: true, class: "form-control form-control lg" %>
+      </div>
+      <div class="col-4 pl-0">
+        <%= f.button class: "btn btn-success" do %>
+          <%= fa_icon "search" %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
