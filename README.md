@@ -1,24 +1,36 @@
-# README
+# Finance Tracker App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a Finance tracker app. This is developed on Ruby 3.0.0. 
 
-Things you may want to cover:
+Visit MessageMe Chat Web App (https://ror-training-finance-tracker.herokuapp.com/)
 
-* Ruby version
+# Getting started
 
-* System dependencies
+## Installation
 
-* Configuration
+Clone the repository
 
-* Database creation
+    git clone [repository link]
 
-* Database initialization
+Switch to the repo folder
 
-* How to run the test suite
+    cd finance-tracker
 
-* Services (job queues, cache servers, search engines, etc.)
+Install gems specified in gem file
 
-* Deployment instructions
+    bundle install --without production
+    
+Start the local development server
 
-* ...
+    rails s
+
+You can now access the server at http://localhost:3000
+
+## Database migration and seeding
+
+Run the database migration and seeder and you're done
+
+    rails db:migrate
+    rails db:seed
+
+***Note*** : It's recommended to have a clean database before seeding. You can refresh your migrations at any point to clean the database by running the following command
