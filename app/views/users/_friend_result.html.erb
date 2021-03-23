@@ -2,11 +2,17 @@
   <%= render 'layouts/messages' %>
 </div>
 
-<% if @friend%>
-  <div class="card card-header d-inline-block mb-3">
-      <strong>Email: </strong> <%= @friend %>
-      <strong>First Name: </strong> <%= @friend %>
-      <strong>Last Name: </strong> <%= @friend %> 
-      <%= link_to "Follow friend?", "#", class: "btn btn-sm btn-success", method: :post %>
+<% @friends.each do |friend| %>
+  <div class="card card-header mb-3 col-12 col-md-9">
+    <div class="d-flex justify-content-between align-items-center">
+      <div>
+        <div><strong>Name: </strong> <%= friend.full_name %></div>
+        <div><strong>Email: </strong> <%= friend.email %></div>
+        <div><strong>Profile: </strong> <%= link_to "View profile", "#" %> </div>
+      </div>
+      <div>
+        <%= link_to "Follow friend?", "#", class: "btn btn-sm btn-success", method: :post %>
+      </div>
+    </div>
   </div>
 <% end %>
