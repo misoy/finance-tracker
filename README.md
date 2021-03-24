@@ -2,7 +2,7 @@
 
 This is a Finance tracker app. This is developed on Ruby 3.0.0. 
 
-Visit MessageMe Chat Web App (https://ror-training-finance-tracker.herokuapp.com/)
+Visit Finance tracker app (https://ror-training-finance-tracker.herokuapp.com/)
 
 # Getting started
 
