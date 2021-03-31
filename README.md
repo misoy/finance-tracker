@@ -1,6 +1,6 @@
 # Finance Tracker App
 
-This is a Finance tracker app. This is developed on Ruby 3.0.0. 
+This is a Finance tracker app. This is developed on Rails 6.1.3. 
 
 Visit Finance tracker app (https://ror-training-finance-tracker.herokuapp.com/)
 
